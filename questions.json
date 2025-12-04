@@ -1,48 +1,367 @@
 {
   "sets": [
     {
-      "id": "set-1",
-      "title": "Set 1",
-      "questions": [
-        {
-          "id": 1,
-          "question": "What is the capital of France?",
-          "options": ["Berlin", "Madrid", "Paris", "Rome"],
-          "answerIndex": 2
-        },
-        {
-          "id": 2,
-          "question": "2 + 2 equals?",
-          "options": ["3", "4", "5", "22"],
-          "answerIndex": 1
-        },
-        {
-          "id": 3,
-          "question": "Which language runs in a web browser?",
-          "options": ["Java", "C", "Python", "JavaScript"],
-          "answerIndex": 3
-        }
-      ]
-    },
-    {
       "id": "set-2",
       "title": "Set 2",
       "questions": [
         {
           "id": 1,
-          "question": "HTML stands for?",
+          "question": "Which of the following is a volatile memory?",
           "options": [
-            "Hyper Text Markup Language",
-            "High Text Machine Language",
-            "Hyperlinks and Text Markup Language",
-            "Home Tool Markup Language"
+            "RAM",
+            "ROM",
+            "Flash",
+            "More than one of the above",
+            "None of the above"
           ],
           "answerIndex": 0
         },
         {
           "id": 2,
-          "question": "CSS is used for?",
-          "options": ["Database", "Styling", "Server Logic", "Networking", "test only"],
+          "question": "What does CPU stand for?",
+          "options": [
+            "Central Process Unit",
+            "Central Processing Unit",
+            "Computer Processing Unit",
+            "More than one of the above",
+            "None of the above"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": 3,
+          "question": "Which data structure works on the principle of FIFO?",
+          "options": [
+            "Stack",
+            "Queue",
+            "Tree",
+            "More than one of the above",
+            "None of the above"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": 4,
+          "question": "Which protocol is used to send emails?",
+          "options": [
+            "HTTP",
+            "FTP",
+            "SMTP",
+            "More than one of the above",
+            "None of the above"
+          ],
+          "answerIndex": 2
+        },
+        {
+          "id": 5,
+          "question": "Which of the following is NOT a programming language?",
+          "options": [
+            "Python",
+            "Java",
+            "C++",
+            "More than one of the above",
+            "None of the above"
+          ],
+          "answerIndex": 4
+        },
+        {
+          "id": 6,
+          "question": "Which memory is fastest?",
+          "options": [
+            "Cache",
+            "RAM",
+            "ROM",
+            "More than one of the above",
+            "None of the above"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": 7,
+          "question": "What does HTML stand for?",
+          "options": [
+            "Hyper Text Markup Language",
+            "High Transfer Machine Language",
+            "Home Tool Marking Language",
+            "More than one of the above",
+            "None of the above"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": 8,
+          "question": "Which of these is an input device?",
+          "options": [
+            "Printer",
+            "Scanner",
+            "Monitor",
+            "More than one of the above",
+            "None of the above"
+          ],
+          "answerIndex": 3
+        },
+        {
+          "id": 9,
+          "question": "Which data structure is used in recursion?",
+          "options": [
+            "Queue",
+            "Stack",
+            "Linked List",
+            "More than one of the above",
+            "None of the above"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": 10,
+          "question": "Which sorting algorithm has the best average performance?",
+          "options": [
+            "Bubble Sort",
+            "Quick Sort",
+            "Selection Sort",
+            "More than one of the above",
+            "None of the above"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": 11,
+          "question": "Which of the following stores BIOS?",
+          "options": [
+            "RAM",
+            "ROM",
+            "Cache",
+            "More than one of the above",
+            "None of the above"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": 12,
+          "question": "Which layer of OSI model handles encryption?",
+          "options": [
+            "Network Layer",
+            "Transport Layer",
+            "Presentation Layer",
+            "More than one of the above",
+            "None of the above"
+          ],
+          "answerIndex": 2
+        },
+        {
+          "id": 13,
+          "question": "Which of the following is a lossless compression format?",
+          "options": [
+            "JPEG",
+            "PNG",
+            "MP3",
+            "More than one of the above",
+            "None of the above"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": 14,
+          "question": "Which is NOT an operating system?",
+          "options": [
+            "Windows",
+            "Linux",
+            "Oracle",
+            "More than one of the above",
+            "None of the above"
+          ],
+          "answerIndex": 3
+        },
+        {
+          "id": 15,
+          "question": "Which keyword is used to define a constant variable in C?",
+          "options": [
+            "final",
+            "constant",
+            "const",
+            "More than one of the above",
+            "None of the above"
+          ],
+          "answerIndex": 2
+        },
+        {
+          "id": 16,
+          "question": "Which command is used to view files in Linux?",
+          "options": [
+            "ls",
+            "dir",
+            "view",
+            "More than one of the above",
+            "None of the above"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": 17,
+          "question": "Which protocol is **secure** version of HTTP?",
+          "options": [
+            "FTP",
+            "SMTP",
+            "HTTPS",
+            "More than one of the above",
+            "None of the above"
+          ],
+          "answerIndex": 2
+        },
+        {
+          "id": 18,
+          "question": "Which logic gate outputs 1 only if all inputs are 1?",
+          "options": [
+            "OR",
+            "AND",
+            "NOR",
+            "More than one of the above",
+            "None of the above"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": 19,
+          "question": "What does SQL stand for?",
+          "options": [
+            "Simple Query Language",
+            "Structured Query Language",
+            "Standard Query Language",
+            "More than one of the above",
+            "None of the above"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": 20,
+          "question": "Which of the following is a NoSQL database?",
+          "options": [
+            "Oracle",
+            "MongoDB",
+            "MySQL",
+            "More than one of the above",
+            "None of the above"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": 21,
+          "question": "Which port does HTTP use by default?",
+          "options": [
+            "80",
+            "21",
+            "23",
+            "More than one of the above",
+            "None of the above"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": 22,
+          "question": "Which searching technique requires sorted data?",
+          "options": [
+            "Linear Search",
+            "Binary Search",
+            "DFS",
+            "More than one of the above",
+            "None of the above"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": 23,
+          "question": "A flip-flop can store:",
+          "options": [
+            "1 bit",
+            "2 bits",
+            "4 bits",
+            "More than one of the above",
+            "None of the above"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": 24,
+          "question": "Which is a type of malware?",
+          "options": [
+            "Worm",
+            "Trojan",
+            "Spyware",
+            "More than one of the above",
+            "None of the above"
+          ],
+          "answerIndex": 3
+        },
+        {
+          "id": 25,
+          "question": "Which protocol is used to resolve IP to MAC address?",
+          "options": [
+            "DNS",
+            "ARP",
+            "RARP",
+            "More than one of the above",
+            "None of the above"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": 26,
+          "question": "Which memory is permanently programmed?",
+          "options": [
+            "RAM",
+            "ROM",
+            "Cache",
+            "More than one of the above",
+            "None of the above"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": 27,
+          "question": "Which one is the default access modifier in a class?",
+          "options": [
+            "public",
+            "private",
+            "protected",
+            "More than one of the above",
+            "None of the above"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": 28,
+          "question": "What type of network is limited to a small office or building?",
+          "options": [
+            "WAN",
+            "MAN",
+            "LAN",
+            "More than one of the above",
+            "None of the above"
+          ],
+          "answerIndex": 2
+        },
+        {
+          "id": 29,
+          "question": "Which operator is used to access members through pointer in C++?",
+          "options": [
+            ".",
+            "->",
+            "::",
+            "More than one of the above",
+            "None of the above"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": 30,
+          "question": "Which device breaks the network collision domain?",
+          "options": [
+            "Hub",
+            "Switch",
+            "Repeater",
+            "More than one of the above",
+            "None of the above"
+          ],
           "answerIndex": 1
         }
       ]
