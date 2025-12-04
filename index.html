@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Practice Exam</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app-container">
+    <header class="app-header">
+      <h1>Practice Exam</h1>
+      <p class="subtitle">Choose a set, answer all questions, and see your result.</p>
+    </header>
+
+    <main class="app-main">
+      <!-- Candidate Info + Set Selection -->
+      <section id="candidate-section" class="card">
+        <h2>Candidate Details</h2>
+        <p class="muted small">
+          Enter your name, choose a test set and start the exam. Your results stay in this browser.
+        </p>
+
+        <div class="form-group">
+          <label for="candidate-name">Name <span class="required">*</span></label>
+          <input type="text" id="candidate-name" placeholder="Enter your name" />
+        </div>
+
+        <div class="form-group">
+          <label for="candidate-id">ID / Roll No (optional)</label>
+          <input type="text" id="candidate-id" placeholder="e.g., 2025-EX-01" />
+        </div>
+
+        <div class="sets-header-row">
+          <div>
+            <h3 class="sets-title">Daily Sets</h3>
+            <p class="muted small">Swipe horizontally to browse sets.</p>
+          </div>
+          <span id="sets-count" class="muted tiny"></span>
+        </div>
+
+        <!-- Horizontally scrollable on mobile -->
+        <div id="sets-list-wrapper">
+          <div id="sets-list" class="sets-list">
+            <!-- Set cards populated by JS -->
+          </div>
+        </div>
+
+        <p id="candidate-error" class="error-message hidden"></p>
+
+        <div class="start-bar">
+          <button id="start-test-btn" class="btn primary" disabled>
+            Start Test
+          </button>
+          <p id="loading-message" class="muted tiny">
+            Loading sets &amp; questions...
+          </p>
+        </div>
+      </section>
+
+      <!-- Quiz Section -->
+      <section id="quiz-section" class="card hidden">
+        <div class="question-header">
+          <span id="question-counter"></span>
+          <span id="candidate-display" class="muted small"></span>
+        </div>
+        <h2 id="question-text"></h2>
+
+        <div id="options-container" class="options"></div>
+
+        <div class="nav-buttons">
+          <button id="prev-btn" class="btn secondary" disabled>Previous</button>
+          <button id="next-btn" class="btn">Next</button>
+        </div>
+
+        <div class="submit-wrapper">
+          <button id="submit-btn" class="btn primary" disabled>Submit Test</button>
+        </div>
+      </section>
+
+      <!-- Result Section -->
+      <section id="result-section" class="card hidden">
+        <h2>Test Result</h2>
+        <p id="score-summary"></p>
+        <p id="result-candidate" class="muted small"></p>
+        <div id="detailed-feedback"></div>
+
+        <div class="result-actions">
+          <button id="retry-btn" class="btn secondary">Retake This Set</button>
+          <button id="export-results-btn" class="btn">Download Results JSON</button>
+        </div>
+      </section>
+
+      <!-- History Section -->
+      <section id="history-section" class="card">
+        <h2>Past Attempts (this browser)</h2>
+        <div id="history-container">
+          <p class="muted">No attempts recorded yet.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="app-footer">
+      <small>Built with HTML, CSS &amp; JS • Works on mobile &amp; desktop</small>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

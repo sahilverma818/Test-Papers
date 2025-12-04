@@ -1,0 +1,51 @@
+{
+  "sets": [
+    {
+      "id": "set-1",
+      "title": "Set 1",
+      "questions": [
+        {
+          "id": 1,
+          "question": "What is the capital of France?",
+          "options": ["Berlin", "Madrid", "Paris", "Rome"],
+          "answerIndex": 2
+        },
+        {
+          "id": 2,
+          "question": "2 + 2 equals?",
+          "options": ["3", "4", "5", "22"],
+          "answerIndex": 1
+        },
+        {
+          "id": 3,
+          "question": "Which language runs in a web browser?",
+          "options": ["Java", "C", "Python", "JavaScript"],
+          "answerIndex": 3
+        }
+      ]
+    },
+    {
+      "id": "set-2",
+      "title": "Set 2",
+      "questions": [
+        {
+          "id": 1,
+          "question": "HTML stands for?",
+          "options": [
+            "Hyper Text Markup Language",
+            "High Text Machine Language",
+            "Hyperlinks and Text Markup Language",
+            "Home Tool Markup Language"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": 2,
+          "question": "CSS is used for?",
+          "options": ["Database", "Styling", "Server Logic", "Networking", "test only"],
+          "answerIndex": 1
+        }
+      ]
+    }
+  ]
+}
