@@ -365,6 +365,972 @@
           "answerIndex": 1
         }
       ]
+    },
+    {
+      "id": "set-2",
+      "title": "Set 2",
+      "questions": [
+        {
+          "id": 1,
+          "question": "The brain of any computer system is",
+          "options": [
+            "ALU",
+            "memory",
+            "CPU",
+            "More than one of the above",
+            "None of the above"
+          ],
+          "answerIndex": 2
+        },
+        {
+          "id": 2,
+          "question": "When a key is pressed on keyboard, which standard is used for converting the keystroke into the corresponding bits?",
+          "options": [
+            "ANSI",
+            "ASCII",
+            "EBCDIC",
+            "More than one of the above",
+            "None of the above"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": 3,
+          "question": "What difference do the fifth generation computers have from other generation computers?",
+          "options": [
+            "Technological advancement",
+            "Object-oriented programming",
+            "Scientific code",
+            "More than one of the above",
+            "None of the above"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": 4,
+          "question": "Source code is available to view, modify and redistribute in",
+          "options": [
+            "open source",
+            "licensed",
+            "proprietary",
+            "More than one of the above",
+            "None of the above"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": 5,
+          "question": "Machine language is",
+          "options": [
+            "machine dependent",
+            "difficult to program",
+            "error prone",
+            "More than one of the above",
+            "None of the above"
+          ],
+          "answerIndex": 3
+        },
+        {
+          "id": 6,
+          "question": "An assembly language is a/an",
+          "options": [
+            "low-level programming language",
+            "middle-level programming language",
+            "Internet-based programming language",
+            "More than one of the above",
+            "None of the above"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": 7,
+          "question": "A compiler is a translating program which",
+          "options": [
+            "translates instruction of a high-level language into machine language",
+            "translates entire source program into machine language program",
+            "It is not involved in program’s execution",
+            "More than one of the above",
+            "None of the above"
+          ],
+          "answerIndex": 3
+        },
+        {
+          "id": 8,
+          "question": "Which of the following approaches is used by C++?",
+          "options": [
+            "Left-right",
+            "Top-down",
+            "Bottom-up",
+            "More than one of the above",
+            "None of the above"
+          ],
+          "answerIndex": 2
+        },
+        {
+          "id": 9,
+          "question": "What is virtual inheritance in C++?",
+          "options": [
+            "C++ technique to enhance multiple inheritance",
+            "C++ technique to ensure that a private member of the base class can be accessed somehow",
+            "C++ technique to avoid multiple copies of the base class into children/derived class",
+            "More than one of the above",
+            "None of the above"
+          ],
+          "answerIndex": 2
+        },
+        {
+          "id": 10,
+          "question": "What happens if the following C++ statement is compiled and executed?\nint*ptr=NULL;\ndeleteptr;",
+          "options": [
+            "The program is not semantically correct",
+            "The program is compiled and executed successfully",
+            "The program is compiled successfully but throws an error during runtime",
+            "More than one of the above",
+            "None of the above"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": 11,
+          "question": "What is the difference between delete and delete[ ] in C++?",
+          "options": [
+            "Delete is syntactically correct but delete[ ] is wrong and hence will give an error if used in any case",
+            "Delete is used to delete normal objects whereas delete[ ] is used to delete pointer objects",
+            "Delete is used to delete single object whereas delete[ ] is used to delete multiple (array/ pointer of) objects",
+            "More than one of the above",
+            "None of the above"
+          ],
+          "answerIndex": 2
+        },
+        {
+          "id": 12,
+          "question": "What happens if the following program is executed in C and C++?\n#include<stdio.h>\nint main(void)\n{\nintnew=5;\nprintf(“%d”, new);\n}",
+          "options": [
+            "Error in C and successful execution in C++",
+            "Error in both C and C++",
+            "Error in C++ and successful execution in C",
+            "More than one of the above",
+            "None of the above"
+          ],
+          "answerIndex": 2
+        },
+        {
+          "id": 13,
+          "question": "What is the value of ‘p’ in the following C++ code snippet?\n1. #include <iostream>\n2. usingnamespacestd;\n3. int main()\n4. {\n5. int p;\n6. bool a=true;\n7. bool b=false;\n8. int x =10;\n9. int y =5;\n10. p=((x|y)+(a+b));\n11. cout<<p;\n12. return 0;\n13. }",
+          "options": [
+            "12",
+            "16",
+            "2",
+            "More than one of the above",
+            "None of the above"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": 14,
+          "question": "The C++ code which causes abnormal termination /behaviour of a program should be written under _____ block.",
+          "options": [
+            "catch",
+            "throw",
+            "try",
+            "More than one of the above",
+            "None of the above"
+          ],
+          "answerIndex": 2
+        },
+        {
+          "id": 15,
+          "question": "What will be the output of the following C++ code?\n#include <iostream.h>\nusingnamespacestd;\nvoid square (int*x, int*y)\n{\n*x=(*x)*––(*y);\n}\nint main()\n{\nint number=30;\nsquare(&number,\n&number);\ncout<<number;\nreturn 0;\n}",
+          "options": [
+            "30",
+            "870",
+            "Segmentation fault",
+            "More than one of the above",
+            "None of the above"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": 16,
+          "question": "Pick the incorrect statement about inline functions in C++.",
+          "options": [
+            "They save overhead of a return call from a function.",
+            "They are generally very large and complicated function.",
+            "These functions are inserted/substituted at the point of call.",
+            "More than one of the above",
+            "None of the above"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": 17,
+          "question": "What is abstract class in C++?",
+          "options": [
+            "Any class in C++ is an abstract class/Class from which any class is derived",
+            "Class specifically used as a base class with at least one virtual function",
+            "Class specifically used as a base class with at least one pure virtual function",
+            "More than one of the above",
+            "None of the above"
+          ],
+          "answerIndex": 2
+        },
+        {
+          "id": 18,
+          "question": "Which of the following constructors is provided by the C++ compiler if not defined in a class?",
+          "options": [
+            "Copy constructor",
+            "Default constructor",
+            "Parameterized constructor",
+            "More than one of the above",
+            "None of the above"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": 19,
+          "question": "How do structures and classes in C++ differ?",
+          "options": [
+            "In structures, members are private by default whereas in classes, they are public by default",
+            "In structures, members are public by default whereas in classes, they are private by default",
+            "Structures cannot have private members whereas classes can have",
+            "More than one of the above",
+            "None of the above"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": 20,
+          "question": "Which of the following features must be supported by any programming language to become a pure object-oriented programming language?",
+          "options": [
+            "Encapsulation",
+            "Inheritance",
+            "Polymorphism",
+            "More than one of the above",
+            "None of the above"
+          ],
+          "answerIndex": 3
+        },
+        {
+          "id": 21,
+          "question": "The programming language that has the ability to create new data types is called",
+          "options": [
+            "overloaded",
+            "encapsulated",
+            "extensible",
+            "More than one of the above",
+            "None of the above"
+          ],
+          "answerIndex": 2
+        },
+        {
+          "id": 22,
+          "question": "Which of the following is the original creator of the C++ language?",
+          "options": [
+            "Dennis Ritchie/Brian Kernighan",
+            "Ken Thompson",
+            "Bjarne Stroustrup",
+            "More than one of the above",
+            "None of the above"
+          ],
+          "answerIndex": 2
+        },
+        {
+          "id": 23,
+          "question": "Which of the following is the correct syntax to read the single character to console in the C++ language?",
+          "options": [
+            "read ch()",
+            "getlinech()",
+            "get(ch)",
+            "More than one of the above",
+            "None of the above"
+          ],
+          "answerIndex": 2
+        },
+        {
+          "id": 24,
+          "question": "Which of the following gives the nth element of the Array?",
+          "options": [
+            "array[n];",
+            "array[n–1];",
+            "array[n+1];",
+            "More than one of the above",
+            "None of the above"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": 25,
+          "question": "How many types of the array are there in the C++ programming language?",
+          "options": [
+            "There are three types of arrays",
+            "There are four types of arrays",
+            "There are two types of arrays",
+            "More than one of the above",
+            "None of the above"
+          ],
+          "answerIndex": 2
+        },
+        {
+          "id": 26,
+          "question": "In C++, for what purpose the “rank()” is used?",
+          "options": [
+            "It returns the size of each dimension",
+            "It returns the maximum number of elements that can be stored in the array",
+            "It returns the dimension of the specified array",
+            "More than one of the above",
+            "None of the above"
+          ],
+          "answerIndex": 2
+        },
+        {
+          "id": 27,
+          "question": "What is the scope of the variable declared in the user-defined function?",
+          "options": [
+            "Whole program",
+            "Only inside the { } block",
+            "Inside the main function",
+            "More than one of the above",
+            "None of the above"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": 28,
+          "question": "Which one of the following is the correct definition of the “is_array();” function in C++?",
+          "options": [
+            "It checks that the specified variable is of the array or not",
+            "It checks that the specified array is of single dimension or not",
+            "It checks that the array specified is of multi￾dimension or not",
+            "More than one of the above",
+            "None of the above"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": 29,
+          "question": "Which of the following statements is true about the new and malloc?\nI. The ‘new’ is a type of operator while ‘malloc’ is a kind of function.\nII. The ‘new’ invokes a constructor, whereas ‘malloc’ does not invoke the constructor.\nIII. The ‘malloc’ returns void pointer and also needed to typecast whereas ‘new’ returns required pointer.",
+          "options": [
+            "Only I",
+            "Both I and II",
+            "Both II and III",
+            "More than one of the above",
+            "None of the above"
+          ],
+          "answerIndex": 3
+        },
+        {
+          "id": 30,
+          "question": "Which of the following can be considered as the members that can be inherited but not accessible in any class?",
+          "options": [
+            "Public",
+            "Protected",
+            "Private",
+            "More than one of the above",
+            "None of the above"
+          ],
+          "answerIndex": 2
+        },
+        {
+          "id": 31,
+          "question": "Which of the following statements is completely true?\nI. In an object-oriented programming language, all the function calls are resolved at compile-time.\nII. In a procedure programming language, all the function calls are resolved at compile-time.",
+          "options": [
+            "Only II",
+            "Only I",
+            "Both I and II",
+            "More than one of the above",
+            "None of the above"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": 32,
+          "question": "What will happen if in a C++ program, a class has no name?",
+          "options": [
+            "It is not even allowed in C++",
+            "It will not have the constructor",
+            "It will not have the destructor",
+            "More than one of the above",
+            "None of the above"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": 33,
+          "question": "How can one implement the compile-time polymorphism in the C++ programming language?",
+          "options": [
+            "By using the template",
+            "By using the concepts of inheritance",
+            "By using both the virtual functions and inheritance",
+            "More than one of the above",
+            "None of the above"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": 34,
+          "question": "Which of the following refers to the wrapping of data and its functionality into a single individual entity?",
+          "options": [
+            "Modularity",
+            "Abstraction",
+            "Encapsulation",
+            "More than one of the above",
+            "None of the above"
+          ],
+          "answerIndex": 2
+        },
+        {
+          "id": 35,
+          "question": "Among the following, which statement is correct about the modularity?",
+          "options": [
+            "Modularity means hiding the parts of the program.",
+            "Modularity refers to dividing a program into subsequent small modules or independent parts.",
+            "It refers to overloading the program’s part.",
+            "More than one of the above",
+            "None of the above"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": 36,
+          "question": "Which one of the following is not the application of the stack data structure?",
+          "options": [
+            "Asynchronous data transfer",
+            "String reversal",
+            "Backtracking",
+            "More than one of the above",
+            "None of the above"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": 37,
+          "question": "Which of the following is the prefix form of A+B*C?",
+          "options": [
+            "+A*BC",
+            "ABC+*",
+            "+AB*C",
+            "More than one of the above",
+            "None of the above"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": 38,
+          "question": "Which data structure is required to convert the infix to prefix notation?",
+          "options": [
+            "Queue",
+            "Stack",
+            "Linked list",
+            "More than one of the above",
+            "None of the above"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": 39,
+          "question": "Which of the following highly uses the concept of an array?",
+          "options": [
+            "Binary search tree",
+            "Scheduling of processes",
+            "Spatial locality",
+            "More than one of the above",
+            "None of the above"
+          ],
+          "answerIndex": 2
+        },
+        {
+          "id": 40,
+          "question": "The necessary condition to be checked before deletion from the queue is",
+          "options": [
+            "front value",
+            "underflow",
+            "overflow",
+            "More than one of the above",
+            "None of the above"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": 41,
+          "question": "Which one of the following is not the application of the queue data structure?",
+          "options": [
+            "Data is transferred asynchronously",
+            "Resource is shared between various systems",
+            "Balancing of symbols",
+            "More than one of the above",
+            "None of the above"
+          ],
+          "answerIndex": 2
+        },
+        {
+          "id": 42,
+          "question": "Which one of the following techniques is not used in the binary tree?",
+          "options": [
+            "Preorder traversal",
+            "Inorder traversal",
+            "Postorder traversal",
+            "More than one of the above",
+            "None of the above"
+          ],
+          "answerIndex": 4
+        },
+        {
+          "id": 43,
+          "question": "How can we describe an array in the best possible way?",
+          "options": [
+            "Arrays are immutable",
+            "Container that stores the elements of similar types",
+            "The array is not a data structure",
+            "More than one of the above",
+            "None of the above"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": 44,
+          "question": "What is another name for the circular queue among the following options?",
+          "options": [
+            "Rectangle buffer",
+            "Square buffer",
+            "Ring buffer",
+            "More than one of the above",
+            "None of the above"
+          ],
+          "answerIndex": 2
+        },
+        {
+          "id": 45,
+          "question": "Which of the following determines the need for the circular queue?",
+          "options": [
+            "Access the queue using priority",
+            "Avoid wastage of memory",
+            "Follow the FIFO principle",
+            "More than one of the above",
+            "None of the above"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": 46,
+          "question": "Which data structure is the best for implementing a priority queue?",
+          "options": [
+            "Linked list",
+            "Array",
+            "Binary heap",
+            "More than one of the above",
+            "None of the above"
+          ],
+          "answerIndex": 2
+        },
+        {
+          "id": 47,
+          "question": "Which of the following data structures finds its use in recursion?",
+          "options": [
+            "Stack",
+            "Linked list",
+            "Array",
+            "More than one of the above",
+            "None of the above"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": 48,
+          "question": "Which of the following satisfies the property of the red-black tree?",
+          "options": [
+            "Black, if the new node is a root node",
+            "Red, if the new node is not a root node",
+            "Black, if the new node is not a root node",
+            "More than one of the above",
+            "None of the above"
+          ],
+          "answerIndex": 3
+        },
+        {
+          "id": 49,
+          "question": "In the deque implementation, using sinly linked list, what would be the time complexity of deleting an element from the rear end?",
+          "options": [
+            "O ( )1",
+            "O N N ( log )",
+            "O N( )",
+            "More than one of the above",
+            "None of the above"
+          ],
+          "answerIndex": 2
+        },
+        {
+          "id": 50,
+          "question": "Which one of the following is the overflow condition if linear queue is implemented using an array with a size MAX_SIZE?",
+          "options": [
+            "rear=MAX_SIZE–1",
+            "rear=MAX_SIZE",
+            "rear=front+1",
+            "More than one of the above",
+            "None of the above"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": 51,
+          "question": "Which of the following is a divide-and-conquer algorithm?",
+          "options": [
+            "Merge sort",
+            "Heap sort",
+            "Bubble sort",
+            "More than one of the above",
+            "None of the above"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": 52,
+          "question": "What is a database?",
+          "options": [
+            "Organized collection of information that cannot be accessed, updated and managed",
+            "Organized collection of data or information that can be accessed, updated and managed",
+            "Organized collection of data that cannot be updated",
+            "More than one of the above",
+            "None of the above"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": 53,
+          "question": "Which type of data can be stored in the database?",
+          "options": [
+            "Image-oriented data",
+            "Text, files containing data",
+            "Data in the form of audio or video",
+            "More than one of the above",
+            "None of the above"
+          ],
+          "answerIndex": 3
+        },
+        {
+          "id": 54,
+          "question": "Which of the following is not a type of database?",
+          "options": [
+            "Network",
+            "Distributed",
+            "Decentralized",
+            "More than one of the above",
+            "None of the above"
+          ],
+          "answerIndex": 2
+        },
+        {
+          "id": 55,
+          "question": "Which of the following is not an example of DBMS?",
+          "options": [
+            "Microsoft access",
+            "IBM Db2",
+            "Google",
+            "More than one of the above",
+            "None of the above"
+          ],
+          "answerIndex": 2
+        },
+        {
+          "id": 56,
+          "question": "Which of the following is not a feature of DBMS?",
+          "options": [
+            "Minimum duplication and redundancy of data",
+            "Single-user access only",
+            "Support ACID property",
+            "More than one of the above",
+            "None of the above"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": 57,
+          "question": "Which of the following is not a function of the database?",
+          "options": [
+            "Manipulating data",
+            "Security for stored data",
+            "Analysing code",
+            "More than one of the above",
+            "None of the above"
+          ],
+          "answerIndex": 2
+        },
+        {
+          "id": 58,
+          "question": "What is information about data called?",
+          "options": [
+            "Teradata",
+            "Metadata",
+            "Relations",
+            "More than one of the above",
+            "None of the above"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": 59,
+          "question": "The DBMS acts as an interface between _____ and _____ of an enterprise-class system.",
+          "options": [
+            "data, the DBMS",
+            "database application, the database",
+            "the user, the software",
+            "More than one of the above",
+            "None of the above"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": 60,
+          "question": "_____ is a set of one or more attribute(s) taken collectively to uniquely identify a record.",
+          "options": [
+            "Primary key",
+            "Foreign key",
+            "Superkey",
+            "More than one of the above",
+            "None of the above"
+          ],
+          "answerIndex": 2
+        },
+        {
+          "id": 61,
+          "question": "Which of the following commands is correct to delete the values in the relation teaches?",
+          "options": [
+            "Delete from teaches;",
+            "Delete from teaches where Id=‘Null’;",
+            "Remove table teaches;",
+            "More than one of the above",
+            "None of the above"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": 62,
+          "question": "The top level of the hierarchy consists of _____ each of which can contain _____.",
+          "options": [
+            "schemas, catalogs",
+            "schemas, environment",
+            "catalogs, schemas",
+            "More than one of the above",
+            "None of the above"
+          ],
+          "answerIndex": 2
+        },
+        {
+          "id": 63,
+          "question": "The user IDs can be added or removed using which of the following fixed roles?",
+          "options": [
+            "db_sysadmin",
+            "db_accessadmin",
+            "db_securityadmin",
+            "More than one of the above",
+            "None of the above"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": 64,
+          "question": "The traditional storage of data organized by the customer, stored in separate folders in filing cabinets is an example of",
+          "options": [
+            "relational database management system",
+            "network database management system",
+            "hierarchical database management system",
+            "More than one of the above",
+            "None of the above"
+          ],
+          "answerIndex": 2
+        },
+        {
+          "id": 65,
+          "question": "After groups have been established, SQL applies predicates in the _____ clause, allowing aggregate functions to be used.",
+          "options": [
+            "HAVING",
+            "GROUP BY",
+            "WITH",
+            "More than one of the above",
+            "None of the above"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": 66,
+          "question": "Which of the follownig is not the utility of DBMS?\nI. Backup\nII. Loading\nIII. Process organization\nIV. File organization",
+          "options": [
+            "I, II and IV only",
+            "I, II and III only",
+            "I, III and IV only",
+            "More than one of the above",
+            "None of the above"
+          ],
+          "answerIndex": 4
+        },
+        {
+          "id": 67,
+          "question": "For designing a normal RDBMS, which of the following normal forms is considered adequate?",
+          "options": [
+            "4NF",
+            "3NF",
+            "2NF",
+            "More than one of the above",
+            "None of the above"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": 68,
+          "question": "What happens if a piece of data is stored in two places in the db?",
+          "options": [
+            "Storage space is wasted and changing the data in one spot will cause data inconsistency",
+            "Changing the data in one spot will cause data inconsistency",
+            "Storage space is wasted",
+            "More than one of the above",
+            "None of the above"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": 69,
+          "question": "Which data type can store unstructured data in a column?",
+          "options": [
+            "RAW",
+            "Numeric",
+            "VARCHAR",
+            "More than one of the above",
+            "None of the above"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": 70,
+          "question": "The logic gate that provides high output for same input is",
+          "options": [
+            "NOT",
+            "X-NOR",
+            "XOR",
+            "More than one of the above",
+            "None of the above"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": 71,
+          "question": "Boolean algebra can be used",
+          "options": [
+            "for designing the digital computers",
+            "in building logic symbols",
+            "in circuit theory",
+            "More than one of the above",
+            "None of the above"
+          ],
+          "answerIndex": 3
+        },
+        {
+          "id": 72,
+          "question": "Communication between a computer and a keyboard involves _____ transmission.",
+          "options": [
+            "simplex",
+            "half-duplex",
+            "full-duplex",
+            "More than one of the above",
+            "None of the above"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": 73,
+          "question": "The simplified form of the Boolean expression ( ) ( ) X Y XY X Z + + + is",
+          "options": [
+            "XY YZ +",
+            "X YZ +",
+            "XZ Y+",
+            "More than one of the above",
+            "None of the above"
+          ],
+          "answerIndex": 4
+        },
+        {
+          "id": 74,
+          "question": "The dual of a Boolean expression is obtained by",
+          "options": [
+            "interchanging all 0s and 1s",
+            "interchanging all 0s and 1s, all + and ‘.’ signs",
+            "interchanging all 0s and 1s, all + and ‘.’ signs and complementing all the variables",
+            "More than one of the above",
+            "None of the above"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": 75,
+          "question": "Wireless transmission of signals can be done via",
+          "options": [
+            "radio waves",
+            "microwaves",
+            "infrared",
+            "More than one of the above",
+            "None of the above"
+          ],
+          "answerIndex": 3
+        },
+        {
+          "id": 76,
+          "question": "Sniffers can be prevented by using",
+          "options": [
+            "wired environment",
+            "ethernet LAN",
+            "switched network",
+            "More than one of the above",
+            "None of the above"
+          ],
+          "answerIndex": 2
+        },
+        {
+          "id": 77,
+          "question": "In TDM, slots are further divided into",
+          "options": [
+            "frames",
+            "packets",
+            "bits",
+            "More than one of the above",
+            "None of the above"
+          ],
+          "answerIndex": 2
+        },
+        {
+          "id": 78,
+          "question": "Transmission control protocol",
+          "options": [
+            "is a connection-oriented protocol",
+            "uses a three-way handshake to establish a connection",
+            "receives data from application as a single stream",
+            "More than one of the above",
+            "None of the above"
+          ],
+          "answerIndex": 3
+        },
+        {
+          "id": 79,
+          "question": "An endpoint of an inter-process communication flow across a computer network is called",
+          "options": [
+            "socket",
+            "pipe",
+            "port",
+            "More than one of the above",
+            "None of the above"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": 80,
+          "question": "Which transmission media provides the highest transmission speed in a network?",
+          "options": [
+            "Coaxial cable",
+            "Twisted-pair cable",
+            "Optical fiber",
+            "More than one of the above",
+            "None of the above"
+          ],
+          "answerIndex": 2
+        }
+      ]
     }
   ]
 }
