@@ -171,9 +171,8 @@ startTestBtn.addEventListener("click", () => {
 
   const title = selectedSet.title || selectedSet.id || "Selected Set";
 
-  candidateDisplayEl.textContent = `Candidate: ${candidateName}${
-    candidateId ? " (" + candidateId + ")" : ""
-  } • Test: ${title}`;
+  candidateDisplayEl.textContent = `Candidate: ${candidateName}${candidateId ? " (" + candidateId + ")" : ""
+    } • Test: ${title}`;
 
   quizSection.classList.remove("hidden");
   renderQuestion();
@@ -187,9 +186,8 @@ function renderQuestion() {
   if (!questions.length) return;
   const q = questions[currentIndex];
 
-  questionCounterEl.textContent = `Question ${currentIndex + 1} of ${
-    questions.length
-  }`;
+  questionCounterEl.textContent = `Question ${currentIndex + 1} of ${questions.length
+    }`;
   questionTextEl.textContent = q.question;
 
   optionsContainer.innerHTML = "";
@@ -251,29 +249,36 @@ function updateNavButtons() {
 }
 
 function updateSubmitButtonState() {
-  const allAnswered = userAnswers.every((ans) => ans !== null);
-  submitBtn.disabled = !allAnswered;
+  // const allAnswered = userAnswers.every((ans) => ans !== null);
+  submitBtn.disabled = false; // Allow submission even if not all answered
 }
 
 // ---- Submit & scoring ----
 submitBtn.addEventListener("click", () => {
-  const total = questions.length;
+  const totalQuestions = questions.length;
   let correctCount = 0;
+  let attemptedCount = 0;
   const questionResults = [];
 
   questions.forEach((q, idx) => {
-    const isCorrect = userAnswers[idx] === q.answerIndex;
+    const selectedIndex = userAnswers[idx];
+    const attempted = selectedIndex !== null;
+    const isCorrect = attempted && selectedIndex === q.answerIndex;
+
+    if (attempted) attemptedCount++;
     if (isCorrect) correctCount++;
 
     questionResults.push({
       id: q.id,
       question: q.question,
-      selectedIndex: userAnswers[idx],
+      selectedIndex,
       correctIndex: q.answerIndex
     });
   });
 
-  const percentage = (correctCount / total) * 100;
+  const percentage =
+    attemptedCount > 0 ? (correctCount / attemptedCount) * 100 : 0;
+
   const timestamp = new Date().toISOString();
 
   const resultObject = {
@@ -282,7 +287,8 @@ submitBtn.addEventListener("click", () => {
     candidateId,
     setId: selectedSet.id,
     setTitle: selectedSet.title || selectedSet.id,
-    totalQuestions: total,
+    totalQuestions,
+    attempted: attemptedCount,
     correct: correctCount,
     percentage: Number(percentage.toFixed(2)),
     details: questionResults
@@ -294,12 +300,14 @@ submitBtn.addEventListener("click", () => {
 });
 
 function showResult(result) {
-  const { totalQuestions, correct, percentage, details } = result;
+  const { totalQuestions, correct, attempted, percentage, details } = result;
 
-  scoreSummaryEl.textContent = `You scored ${correct} out of ${totalQuestions} (${percentage}%).`;
-  resultCandidateEl.textContent = `Candidate: ${result.candidateName}${
-    result.candidateId ? " (" + result.candidateId + ")" : ""
-  } • Test: ${result.setTitle}`;
+  scoreSummaryEl.textContent =
+    `Attempted: ${attempted}/${totalQuestions} • ` +
+    `Correct: ${correct} (${percentage}%)`;
+
+  resultCandidateEl.textContent = `Candidate: ${result.candidateName}${result.candidateId ? " (" + result.candidateId + ")" : ""
+    } • Test: ${result.setTitle}`;
 
   detailedFeedbackEl.innerHTML = "";
   details.forEach((d, idx) => {
@@ -331,6 +339,7 @@ function showResult(result) {
   resultSection.classList.remove("hidden");
   resultSection.scrollIntoView({ behavior: "smooth" });
 }
+
 
 // ---- History in localStorage ----
 const STORAGE_KEY = "examResults";
@@ -364,17 +373,19 @@ function loadHistory() {
 
   const thead = document.createElement("thead");
   thead.innerHTML = `
-    <tr>
-      <th>#</th>
-      <th>Date & Time</th>
-      <th>Name</th>
-      <th>ID</th>
-      <th>Test Set</th>
-      <th>Score</th>
-      <th>%</th>
-      <th>Questions</th>
-    </tr>
-  `;
+  <tr>
+    <th>#</th>
+    <th>Date & Time</th>
+    <th>Name</th>
+    <th>ID</th>
+    <th>Test Set</th>
+    <th>Score</th>
+    <th>%</th>
+    <th>Attempted</th>
+    <th>Questions</th>
+  </tr>
+`;
+
   table.appendChild(thead);
 
   const tbody = document.createElement("tbody");
@@ -399,10 +410,17 @@ function loadHistory() {
     setTd.textContent = r.setTitle || r.setId || "-";
 
     const scoreTd = document.createElement("td");
-    scoreTd.textContent = `${r.correct}/${r.totalQuestions}`;
+    const attempted = typeof r.attempted === "number"
+      ? r.attempted
+      : r.totalQuestions; // fallback for old records
+    scoreTd.textContent = `${r.correct}/${attempted}`;
 
     const percTd = document.createElement("td");
     percTd.textContent = `${r.percentage}%`;
+
+    const attemptedTd = document.createElement("td");
+    attemptedTd.textContent =
+      typeof r.attempted === "number" ? r.attempted : r.totalQuestions;
 
     const qTd = document.createElement("td");
     qTd.textContent = r.totalQuestions;
@@ -414,6 +432,7 @@ function loadHistory() {
     tr.appendChild(setTd);
     tr.appendChild(scoreTd);
     tr.appendChild(percTd);
+    tr.appendChild(attemptedTd);
     tr.appendChild(qTd);
 
     tbody.appendChild(tr);
