@@ -489,23 +489,39 @@ retryBtn.addEventListener("click", () => {
 // ---- Export results as JSON file ----
 exportResultsBtn.addEventListener("click", async () => {
   const history = getHistory();
-
   const jsonText = JSON.stringify(history, null, 2);
-  const file = new File([jsonText], "results.json", {
-    type: "application/json"
-  });
 
+  // Short readable summary (safe for WhatsApp/SMS)
+  const summary = history
+    .slice(-1)
+    .map(r =>
+      `Practice Exam Result
+Name: ${r.candidateName}
+Test: ${r.setTitle}
+Score: ${r.correct}/${r.attempted}
+Percentage: ${r.percentage}%
+Date: ${new Date(r.timestamp).toLocaleString()}`
+    )[0];
+
+  // 1️⃣ Try sharing summary text
   if (navigator.share) {
     try {
       await navigator.share({
-        title: "Practice Exam Results",
-        text: "Here are my practice exam results.",
-        files: [file]
+        title: "Practice Exam Result",
+        text: summary
       });
+      return;
     } catch (err) {
-      console.error("Share cancelled or failed", err);
+      // user cancel OR app rejected
+      console.warn("Text share cancelled or rejected");
     }
-  } else {
-    alert("Sharing is not supported on this browser. Please use a mobile browser.");
+  }
+
+  // 2️⃣ Copy full JSON to clipboard
+  try {
+    await navigator.clipboard.writeText(jsonText);
+    alert("Full JSON copied to clipboard. You can paste it anywhere.");
+  } catch {
+    alert("Sharing is not supported on this device.");
   }
 });
