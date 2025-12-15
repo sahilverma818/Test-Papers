@@ -40,6 +40,8 @@ let userAnswers = [];       // [index or null] per question
 let candidateName = "";
 let candidateId = "";
 
+let testStartTime = null;
+
 // ---- Load sets + questions on page load ----
 fetch("questions.json")
   .then((res) => res.json())
@@ -121,6 +123,11 @@ function selectSetCard(setId) {
 
 // ---- Start button enabled when name + set chosen ----
 function updateStartButtonState() {
+  if (quizSection && !quizSection.classList.contains("hidden")) {
+    startTestBtn.disabled = true;
+    return;
+  }
+
   const name = candidateNameInput.value.trim();
   const hasSet = !!selectedSetId;
   const setsLoaded = allSets.length > 0;
@@ -145,6 +152,8 @@ startTestBtn.addEventListener("click", () => {
     candidateError.classList.remove("hidden");
     return;
   }
+
+  testStartTime = new Date().toISOString();
 
   const set = allSets.find((s) => s.id === selectedSetId);
   if (!set) {
@@ -179,6 +188,9 @@ startTestBtn.addEventListener("click", () => {
   updateNavButtons();
 
   quizSection.scrollIntoView({ behavior: "smooth" });
+  
+  startTestBtn.disabled = true;
+
 });
 
 // ---- Render quiz question ----
@@ -283,6 +295,7 @@ submitBtn.addEventListener("click", () => {
 
   const resultObject = {
     timestamp,
+    startTime: testStartTime,   // ✅ NEW
     candidateName,
     candidateId,
     setId: selectedSet.id,
@@ -308,6 +321,15 @@ function showResult(result) {
 
   resultCandidateEl.textContent = `Candidate: ${result.candidateName}${result.candidateId ? " (" + result.candidateId + ")" : ""
     } • Test: ${result.setTitle}`;
+  
+  const start = new Date(result.startTime).toLocaleString();
+  const end = new Date(result.timestamp).toLocaleString();
+
+  const timeInfo = document.createElement("p");
+  timeInfo.className = "muted small";
+  timeInfo.textContent = `Started: ${start} • Submitted: ${end}`;
+  resultCandidateEl.after(timeInfo);
+
 
   detailedFeedbackEl.innerHTML = "";
   details.forEach((d, idx) => {
@@ -375,6 +397,7 @@ function loadHistory() {
   thead.innerHTML = `
   <tr>
     <th>#</th>
+    <th>Started At</th>
     <th>Date & Time</th>
     <th>Name</th>
     <th>ID</th>
@@ -395,6 +418,11 @@ function loadHistory() {
 
     const attemptTd = document.createElement("td");
     attemptTd.textContent = idx + 1;
+
+    const startTd = document.createElement("td");
+    startTd.textContent = r.startTime
+      ? new Date(r.startTime).toLocaleString()
+      : "-";
 
     const dateTd = document.createElement("td");
     const date = new Date(r.timestamp);
@@ -426,6 +454,7 @@ function loadHistory() {
     qTd.textContent = r.totalQuestions;
 
     tr.appendChild(attemptTd);
+    tr.appendChild(startTd);
     tr.appendChild(dateTd);
     tr.appendChild(nameTd);
     tr.appendChild(idTd);
@@ -449,6 +478,8 @@ retryBtn.addEventListener("click", () => {
   questions = selectedSet.questions;
   userAnswers = new Array(questions.length).fill(null);
   currentIndex = 0;
+  startTestBtn.disabled = true;
+  testStartTime = new Date().toISOString();
   renderQuestion();
   updateNavButtons();
   resultSection.classList.add("hidden");
@@ -456,18 +487,25 @@ retryBtn.addEventListener("click", () => {
 });
 
 // ---- Export results as JSON file ----
-exportResultsBtn.addEventListener("click", () => {
+exportResultsBtn.addEventListener("click", async () => {
   const history = getHistory();
-  const blob = new Blob([JSON.stringify(history, null, 2)], {
+
+  const jsonText = JSON.stringify(history, null, 2);
+  const file = new File([jsonText], "results.json", {
     type: "application/json"
   });
 
-  const url = URL.createObjectURL(blob);
-  const a = document.createElement("a");
-  a.href = url;
-  a.download = "results.json";
-  document.body.appendChild(a);
-  a.click();
-  document.body.removeChild(a);
-  URL.revokeObjectURL(url);
+  if (navigator.share) {
+    try {
+      await navigator.share({
+        title: "Practice Exam Results",
+        text: "Here are my practice exam results.",
+        files: [file]
+      });
+    } catch (err) {
+      console.error("Share cancelled or failed", err);
+    }
+  } else {
+    alert("Sharing is not supported on this browser. Please use a mobile browser.");
+  }
 });
