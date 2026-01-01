@@ -2593,6 +2593,288 @@
           "answerIndex": 2
         }
       ]
+    },
+    {
+      "id": "set-5",
+      "title": "UGC NET SET",
+      "questions": [
+        {
+          "id": 1,
+          "question": "P : “Program is a step by step execution of the instructions”. Given P, which of the following is true ?",
+          "options": [
+            "Program is a subset of an instruction set.",
+            "Program is a sequence of a subset of an instruction set.",
+            "Program is a partially ordered set of an instruction set.",
+            "All of the above",
+            "None of the above"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": 2,
+          "question": "Which one of the following is not a functional programming language?",
+          "options": [
+            "LISP",
+            "Haskell",
+            "Scheme",
+            "Prolog"
+          ],
+          "answerIndex": 3
+        },
+        {
+          "id": 3,
+          "question": "Which of the following is not a property of a good hash function?",
+          "options": [
+            "Uniform distribution of keys",
+            "Easy computation",
+            "Minimal collision",
+            "Preservation of order of keys"
+          ],
+          "answerIndex": 3
+        },
+        {
+          "id": 4,
+          "question": "Which one of the following scheduling algorithms may cause starvation?",
+          "options": [
+            "First Come First Serve",
+            "Round Robin",
+            "Priority Scheduling",
+            "Shortest Job First"
+          ],
+          "answerIndex": 2
+        },
+        {
+          "id": 5,
+          "question": "In which of the following normal forms a relation is said to be if it contains no transitive dependency?",
+          "options": [
+            "First Normal Form",
+            "Second Normal Form",
+            "Third Normal Form",
+            "Boyce–Codd Normal Form"
+          ],
+          "answerIndex": 2
+        },
+        {
+          "id": 6,
+          "question": "Which of the following is not a type of software testing?",
+          "options": [
+            "Unit testing",
+            "System testing",
+            "Regression testing",
+            "Algorithm testing"
+          ],
+          "answerIndex": 3
+        },
+        {
+          "id": 7,
+          "question": "Which of the following is used to uniquely identify a record in a relational database table?",
+          "options": [
+            "Foreign key",
+            "Primary key",
+            "Secondary key",
+            "Candidate key"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": 8,
+          "question": "Which data structure is used for Breadth First Search of a graph?",
+          "options": [
+            "Stack",
+            "Queue",
+            "Priority queue",
+            "Set"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": 9,
+          "question": "Which of the following is not an operating system?",
+          "options": [
+            "Linux",
+            "Windows",
+            "Oracle",
+            "UNIX"
+          ],
+          "answerIndex": 2
+        },
+        {
+          "id": 10,
+          "question": "Which of the following memory is non-volatile?",
+          "options": [
+            "RAM",
+            "Cache",
+            "ROM",
+            "Register"
+          ],
+          "answerIndex": 2
+        },
+        {
+          "id": 11,
+          "question": "Which protocol is used to send electronic mail?",
+          "options": [
+            "FTP",
+            "SMTP",
+            "HTTP",
+            "SNMP"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": 12,
+          "question": "Which of the following is not a component of DBMS?",
+          "options": [
+            "Data",
+            "Hardware",
+            "Users",
+            "Compiler"
+          ],
+          "answerIndex": 3
+        },
+        {
+          "id": 13,
+          "question": "Which algorithm is used to find the shortest path in a graph?",
+          "options": [
+            "Prim’s algorithm",
+            "Kruskal’s algorithm",
+            "Dijkstra’s algorithm",
+            "DFS"
+          ],
+          "answerIndex": 2
+        },
+        {
+          "id": 14,
+          "question": "Which of the following is not a characteristic of object-oriented programming?",
+          "options": [
+            "Encapsulation",
+            "Inheritance",
+            "Polymorphism",
+            "Compilation"
+          ],
+          "answerIndex": 3
+        },
+        {
+          "id": 15,
+          "question": "Which of the following is not a type of computer network?",
+          "options": [
+            "LAN",
+            "MAN",
+            "WAN",
+            "TAN"
+          ],
+          "answerIndex": 3
+        },
+        {
+          "id": 16,
+          "question": "Which of the following sorting algorithms has the best average case time complexity?",
+          "options": [
+            "Bubble sort",
+            "Insertion sort",
+            "Merge sort",
+            "Selection sort"
+          ],
+          "answerIndex": 2
+        },
+        {
+          "id": 17,
+          "question": "Which of the following is a lossless data compression technique?",
+          "options": [
+            "JPEG",
+            "MPEG",
+            "Huffman coding",
+            "MP3"
+          ],
+          "answerIndex": 2
+        },
+        {
+          "id": 18,
+          "question": "Which of the following is not a layer of the OSI model?",
+          "options": [
+            "Transport layer",
+            "Session layer",
+            "Presentation layer",
+            "Internet layer"
+          ],
+          "answerIndex": 3
+        },
+        {
+          "id": 19,
+          "question": "Which of the following is used for deadlock avoidance?",
+          "options": [
+            "Semaphore",
+            "Banker’s algorithm",
+            "Round robin",
+            "Mutex"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": 20,
+          "question": "Which of the following is not a type of malware?",
+          "options": [
+            "Virus",
+            "Worm",
+            "Trojan horse",
+            "Firewall"
+          ],
+          "answerIndex": 3
+        },
+        {
+          "id": 21,
+          "question": "Which of the following is a characteristic of cloud computing?",
+          "options": [
+            "On-demand self-service",
+            "High latency",
+            "Manual resource allocation",
+            "Single-user access"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": 22,
+          "question": "Which of the following is not a NoSQL database?",
+          "options": [
+            "MongoDB",
+            "Cassandra",
+            "Redis",
+            "MySQL"
+          ],
+          "answerIndex": 3
+        },
+        {
+          "id": 23,
+          "question": "Which of the following is not a programming paradigm?",
+          "options": [
+            "Procedural",
+            "Object-oriented",
+            "Functional",
+            "Incremental"
+          ],
+          "answerIndex": 3
+        },
+        {
+          "id": 24,
+          "question": "Which of the following is not a valid IPv4 address?",
+          "options": [
+            "192.168.1.1",
+            "255.255.255.255",
+            "300.1.1.1",
+            "127.0.0.1"
+          ],
+          "answerIndex": 2
+        },
+        {
+          "id": 25,
+          "question": "Which of the following is not a component of a compiler?",
+          "options": [
+            "Lexical analyzer",
+            "Syntax analyzer",
+            "Code optimizer",
+            "Linker"
+          ],
+          "answerIndex": 3
+        }
+      ]
     }
   ]
 }
