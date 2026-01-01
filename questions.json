@@ -2875,6 +2875,309 @@
           "answerIndex": 3
         }
       ]
+    },
+    {
+      "id": "set-6",
+      "title": "UGC NET SET",
+      "questions": [
+        {
+          "id": 1,
+          "question": "P : “Program is a step by step execution of the instructions”. Given P, which of the following is true ?",
+          "options": [
+            "Program is a subset of an instruction set.",
+            "Program is a sequence of a subset of an instruction set.",
+            "Program is a partially ordered set of an instruction set.",
+            "All of the above"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": 2,
+          "question": "The simplified form of the Boolean expression (X + Y + XY) (X + Z) is",
+          "options": [
+            "X + Y + ZX + Y",
+            "XY – YZ",
+            "X + YZ",
+            "XZ + Y"
+          ],
+          "answerIndex": 2
+        },
+        {
+          "id": 3,
+          "question": "The answer of the operation (10111)2 * (1110)2 in hex equivalence is",
+          "options": [
+            "150",
+            "241",
+            "142",
+            "101011110"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": 4,
+          "question": "How many 1’s are present in the binary representation of 3 × 512 + 7 × 64 + 5 × 8 + 3 ?",
+          "options": [
+            "8",
+            "9",
+            "10",
+            "11"
+          ],
+          "answerIndex": 2
+        },
+        {
+          "id": 5,
+          "question": "Recursive functions are executed in a",
+          "options": [
+            "First in first out-order",
+            "Last in first out-order",
+            "Parallel fashion",
+            "Load balancing"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": 6,
+          "question": "A __________ is a special method used to initialize the instance variable of a class.",
+          "options": [
+            "Member function",
+            "Destructor",
+            "Constructor",
+            "Structure"
+          ],
+          "answerIndex": 2
+        },
+        {
+          "id": 7,
+          "question": "Encapsulation is",
+          "options": [
+            "Dynamic binding",
+            "A mechanism to associate the code and data.",
+            "Data abstraction",
+            "Creating new class"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": 8,
+          "question": "Which of the statements are true ? I. Function overloading is done at compile time. II. Protected members are accessible to the member of derived class. III. A derived class inherits constructors and destructors. IV. A friend function can be called like a normal function. V. Nested class is a derived class.",
+          "options": [
+            "I, II, III",
+            "II, III, V",
+            "III, IV, V",
+            "I, II, IV"
+          ],
+          "answerIndex": 3
+        },
+        {
+          "id": 9,
+          "question": "The E-R model is expressed in term of",
+          "options": [
+            "I, II",
+            "I, II, IV",
+            "II, II, IV",
+            "I, II, III"
+          ],
+          "answerIndex": 3
+        },
+        {
+          "id": 10,
+          "question": "Specialization is __________ process.",
+          "options": [
+            "top-down",
+            "bottom up",
+            "both (A) and (B)",
+            "none of these"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": 11,
+          "question": "A function that has no partial functional dependencies is in __________ form.",
+          "options": [
+            "3 NF",
+            "2 NF",
+            "4 NF",
+            "BCNF"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": 12,
+          "question": "If the number of leaves in a strictly binary tree is an odd number, then what can you say with full conviction about total number of nodes in the tree ?",
+          "options": [
+            "It is an odd number.",
+            "It is an even number.",
+            "It cannot be equal to the number of leaves.",
+            "It is always greater than twice the number of leaves."
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": 13,
+          "question": "The number of edges in a complete graph of n vertices is",
+          "options": [
+            "n",
+            "n(n – 1)/2",
+            "n(n + 1)/2",
+            "n²/2"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": 14,
+          "question": "At a hill station, the parking lot is one long drive way snaking up a hill side. Cars drive in and park right behind the car in front of them. A car can’t leave until all the cars in front of it have left. Is the parking lot more like",
+          "options": [
+            "An array",
+            "A stack",
+            "A queue",
+            "A linked list"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": 15,
+          "question": "With regard to linked list, which of the following statement is false ?",
+          "options": [
+            "An algorithm to search for an element in a singly linked list requires O(n) operations in the worst case.",
+            "An algorithm for deleting the first element in a singly linked list requires O(n) operations in the worst case.",
+            "An algorithm for finding the maximum value in a circular linked list requires O(n) operations.",
+            "An algorithm for deleting the middle node of a circular linked list requires O(n) operations."
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": 16,
+          "question": "Device on one network can communicate with devices on another network via a",
+          "options": [
+            "Hub/Switch",
+            "Utility server",
+            "File server",
+            "Gateway"
+          ],
+          "answerIndex": 3
+        },
+        {
+          "id": 17,
+          "question": "What is the maximum window size in sliding window protocol used in a computer network ?",
+          "options": [
+            "4",
+            "8",
+            "15",
+            "16"
+          ],
+          "answerIndex": 2
+        },
+        {
+          "id": 18,
+          "question": "In case of Bus/Tree topology signal balancing issue is overcome by",
+          "options": [
+            "Modulation",
+            "Polling",
+            "Segmentation",
+            "Strong transmitter"
+          ],
+          "answerIndex": 2
+        },
+        {
+          "id": 19,
+          "question": "Context-free Grammar (CFG) can be recognized by",
+          "options": [
+            "Finite state automata",
+            "2-way linear bounded automata",
+            "Push down automata",
+            "Both (B) and (C)"
+          ],
+          "answerIndex": 2
+        },
+        {
+          "id": 20,
+          "question": "In the process management Round-robin method is essentially the pre-emptive version of",
+          "options": [
+            "FILO",
+            "FIFO",
+            "SSF",
+            "Longest time first"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": 21,
+          "question": "A page fault",
+          "options": [
+            "Is an error specific page.",
+            "Is an access to the page not currently in memory.",
+            "Occur when a page program occur in a page memory.",
+            "Page used in the previous page reference."
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": 22,
+          "question": "A semaphore count of negative n means (s = – n) that the queue contains ________ waiting processes.",
+          "options": [
+            "n + 1",
+            "n",
+            "n – 1",
+            "0"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": 23,
+          "question": "A program is located in the smallest available hole in the memory is",
+          "options": [
+            "Best-fit",
+            "First-fit",
+            "Worst-fit",
+            "Buddy"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": 24,
+          "question": "The Unix command used to find out the number of characters in a file is",
+          "options": [
+            "nc",
+            "wc",
+            "chcnt",
+            "lc"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": 25,
+          "question": "Software Engineering is a discipline that integrates _________ for the development of computer software.",
+          "options": [
+            "Process",
+            "Methods",
+            "Tools",
+            "All"
+          ],
+          "answerIndex": 3
+        },
+        {
+          "id": 26,
+          "question": "Any error whose cause cannot be identified anywhere within the software system is called",
+          "options": [
+            "Internal error",
+            "External error",
+            "Inherent error",
+            "Logic error"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": 27,
+          "question": "Black Box testing is done",
+          "options": [
+            "To show that software is operational at its interfaces i.e. input and output.",
+            "To examine internal details of code.",
+            "At client side.",
+            "None of above."
+          ],
+          "answerIndex": 0
+        }
+      ]
     }
   ]
 }
