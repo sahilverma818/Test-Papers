@@ -3178,6 +3178,122 @@
           "answerIndex": 0
         }
       ]
+    },
+    {
+      "id": "set-7",
+      "title": "UGC NET SET",
+      "questions": [
+        {
+          "id": 1,
+          "question": "If (L)M represents a number L in base-M number system, then what will be the value of (107)16 + (257)16 ?",
+          "options": [
+            "(762)10",
+            "(862)10",
+            "(962)10",
+            "(662)10"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": 2,
+          "question": "In computer networking, an IP version-6 is ______ times larger than an IP version-4 address.",
+          "options": [
+            "2",
+            "4",
+            "6",
+            "8"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": 3,
+          "question": "Identify the correct order of the following major technological changes A-D in the development of computers based on first to fourth generation of computers.",
+          "options": [
+            "(A), (C), (D), (B)",
+            "(B), (A), (C), (D)",
+            "(D), (A), (C), (B)",
+            "(C), (A), (D), (B)"
+          ],
+          "answerIndex": 3
+        },
+        {
+          "id": 4,
+          "question": "To record voice narration for your Microsoft PowerPoint presentation, your computer must have:",
+          "options": [
+            "(A), (C) and (E) only",
+            "(B) and (D) only",
+            "(A) and (E) only",
+            "(B), (C) and (D) only"
+          ],
+          "answerIndex": 2
+        },
+        {
+          "id": 5,
+          "question": "______ is a Self Balancing binary search tree, where the path from the root to the furthest leaf is no more than twice as long as the path from the root to nearest leaf.",
+          "options": [
+            "Expression tree",
+            "Game tree",
+            "Red-Black tree",
+            "Threaded tree"
+          ],
+          "answerIndex": 2
+        },
+        {
+          "id": 6,
+          "question": "In Software configuration management, what is the primary purpose of version control?",
+          "options": [
+            "To control the changes made to software",
+            "To document user requirements",
+            "To estimate project cost",
+            "To design the software architecture"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "id": 7,
+          "question": "If a software project has 2000 lines of code (LOC) and the average productivity rate is 10 LOC per person-hour, how many person-hours are required to complete the project?",
+          "options": [
+            "100",
+            "150",
+            "200",
+            "250"
+          ],
+          "answerIndex": 2
+        },
+        {
+          "id": 8,
+          "question": "Given a project that uses the COCOMO model with an estimated effort of 2000 person-months and a productivity rate of 5 person-month per KLOC, what is the estimated size of the project in KLOC?",
+          "options": [
+            "200",
+            "400",
+            "100",
+            "50"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "id": 9,
+          "question": "Two computers A and B are configured as follows: A has IP address 203.197.2.53 with subnet mask 255.255.128.0, B has IP address 203.197.75.201 with subnet mask 255.255.192.0. What one of the following statement is true?",
+          "options": [
+            "A and B both assume they are on the same network",
+            "B assumes A is on same network, A assumes B is on different network",
+            "A assumes B is on same network, but B assumes A is on a different network",
+            "A and B both assume they are on different network"
+          ],
+          "answerIndex": 2
+        },
+        {
+          "id": 10,
+          "question": "A class B network on the Internet has a subnet mask of 255.255.248.0, what is the maximum number of hosts per subnet?",
+          "options": [
+            "1022",
+            "1023",
+            "2046",
+            "2047"
+          ],
+          "answerIndex": 2
+        }
+      ]
     }
   ]
 }
